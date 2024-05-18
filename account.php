@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['user'])) {
-    header("Location:../home.php");
+    header("Location:../index.php");
     exit();
 }
 
@@ -28,7 +28,7 @@ $user = $_SESSION['user'][0];
             <h1>Social Media Campaign</h1>
         </div>
         <div class="second-header">
-            <a href="home.php" class="logo">SMC</a>
+            <a href="index.php" class="logo">SMC</a>
             <?php
             include("translate.php");
             ?>
@@ -36,7 +36,7 @@ $user = $_SESSION['user'][0];
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="information.php">Information</a></li>
                     <li><a href="#">More +</a>
                         <ul>

@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($password, $dbUser[0]['password'])) {
             $_SESSION['user'] = $dbUser;
             if ($dbUser[0]['role_id'] == 1) {
-                header("Location:../home.php");
+                header("Location:../index.php");
                 exit();
             }
             if ($dbUser[0]['role_id'] == 2) {

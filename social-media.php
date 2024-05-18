@@ -40,7 +40,7 @@ if (isset($_GET['search'])) {
             <h1>Social Media Campaign</h1>
         </div>
         <div class="second-header">
-            <a href="home.php" class="logo">SMC</a>
+            <a href="index.php" class="logo">SMC</a>
             <?php
             include("translate.php");
             ?>
@@ -48,7 +48,7 @@ if (isset($_GET['search'])) {
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="home.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="social-media.php" class="active">Social Media Apps</a></li>
                     <li><a href="#">More +</a>
                         <ul>
