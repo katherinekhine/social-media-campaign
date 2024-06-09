@@ -17,7 +17,7 @@ $user = $_SESSION['user'][0];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -54,7 +54,7 @@ $user = $_SESSION['user'][0];
 
                         if ($user) {
                             echo "<li><a href='./account.php' class='active'>" . $user['fname'] . "</a></li>
-                            <li><a href='./actions/logout-user.php'>Logout</a></li>";
+                            <li><a href='../actions/logout-user.php'>Logout</a></li>";
                         } else {
                             echo ' <li><a href="#">Login +</a>
             <ul>
@@ -81,13 +81,13 @@ $user = $_SESSION['user'][0];
     <div class="account container">
         <h1><?= $user['fname'] . " " . $user['lname'] ?>'s account </h1>
         <?php if ($user['image']) : ?>
-            <img src="./img/uploads/<?= $user['image'] ?>" alt="">
+            <img src="../img/uploads/<?= $user['image'] ?>" alt="">
         <?php endif ?>
-        <form action="./actions/edit-user.php" method="post" enctype="multipart/form-data">
+        <form action="../actions/edit-user.php" method="post" enctype="multipart/form-data">
             <input type="file" name="image" placeholder="upload image">
             <button type="submit">Upload</button>
         </form>
-        <form action="./actions/user-edit.php" method="post">
+        <form action="../actions/user-edit.php" method="post">
             <input type="text" name="fname" value="<?php echo $user['fname'] ?>" placeholder="First Name">
             <input type="text" name="lname" value="<?php echo $user['lname'] ?>" placeholder="Last Name">
             <input type="tel" name="phone" value="<?php echo $user['phone'] ?>" placeholder="Phone">

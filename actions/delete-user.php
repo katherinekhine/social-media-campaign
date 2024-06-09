@@ -12,7 +12,7 @@ if (isset($_GET['userID'])) {
     $userID = $_GET['userID'];
 
     $user->deleteUser($userID);
-    header("Location:../admin.php");
+    header("Location:../api/admin.php");
     exit();
 } else {
     // If 'userId' is not set in the URL, handle accordingly

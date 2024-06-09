@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Create</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                         << Back</a></button>
             </div>
         </div>
-        <form action="./actions/create-app.php" method="post">
+        <form action="../actions/create-app.php" method="post">
             <div class="create-img">
                 <input type="file" name="image" placeholder="upload image">
             </div>

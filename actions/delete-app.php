@@ -12,7 +12,7 @@ if (isset($_GET['appId'])) {
     $appId = $_GET['appId'];
 
     $app->deleteApp($appId);
-    header("Location:../admin-app.php");
+    header("Location:../api/admin-app.php");
     exit();
 } else {
     // If 'appId' is not set in the URL, handle accordingly

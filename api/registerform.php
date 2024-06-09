@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 
 </head>
 
@@ -15,7 +15,7 @@
             <div class="reg-title">
                 Registration Form
             </div>
-            <form action="./actions/create-user.php" method="post">
+            <form action="../actions/create-user.php" method="post">
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">First Name:</span>
@@ -63,9 +63,6 @@
                         <div class="gender-radio"> <input type="radio" name="gender" value="Prefer not to say">Prefer not to say</div>
                     </div>
                 </div>
-
-                <div class="g-recaptcha" data-sitekey="6LcROIIpAAAAACa1yd8jj8Z22Lzp6VzFxSvO3GgT"></div>
-
 
                 <div class="reg-button">
                     <input type="submit" value="Register">

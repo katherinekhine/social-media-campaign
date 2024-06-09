@@ -1,0 +1,62 @@
+{
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/information.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/parent-help.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/livestream.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/social-media.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/guidance.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/contact.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/account.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "/information",
+      "dest": "/api/information.php"
+    },
+    {
+      "src": "/parent-help",
+      "dest": "/api/parent-help.php"
+    },
+    {
+      "src": "/livestream",
+      "dest": "/api/livestream.php"
+    },
+    {
+      "src": "/social-media",
+      "dest": "/api/social-media.php"
+    },
+    {
+      "src": "/guidance",
+      "dest": "/api/guidance.php"
+    },
+    {
+      "src": "/contact",
+      "dest": "/api/contact.php"
+    },
+    {
+      "src": "/account",
+      "dest": "/api/account.php"
+    }
+  ]
+}

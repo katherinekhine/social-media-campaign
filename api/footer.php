@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 
 </head>
 
@@ -19,19 +19,19 @@
                 <p>Have any questions or feedback? We'd love to hear from you! Please don't hesitate to reach out to us via our contact form or connect with us on social media. Together, we can create a safer and more positive online experience for teenagers everywhere.</p>
                 <div class="social-media">
                     <a href="https://www.facebook.com" target="_blank" class="fb">
-                        <img src="img/facebook-icon.jpg" alt="facebook icon">
+                        <img src="../img/facebook-icon.jpg" alt="facebook icon">
                     </a>
                     <a href="https://www.instagram.com" target="_blank" class="ig">
-                        <img src="img/Instagram-icon.jpg" alt="instagram icon">
+                        <img src="../img/Instagram-icon.jpg" alt="instagram icon">
                     </a>
                     <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp">
-                        <img src="img/whatsapp-icon.jpg" alt="whatsapp icon">
+                        <img src="../img/whatsapp-icon.jpg" alt="whatsapp icon">
                     </a>
                     <a href="https://www.youtube.com" target="_blank" class="yt">
-                        <img src="img/youtube-icon.jpg" alt="youtube icon">
+                        <img src="../img/youtube-icon.jpg" alt="youtube icon">
                     </a>
                     <a href="https://www.tiktok.com/explore" target="_blank" class="tt">
-                        <img src="img/tiktok-icon.jpg" alt="tiktok icon">
+                        <img src="../img/tiktok-icon.jpg" alt="tiktok icon">
                     </a>
                 </div>
             </div>
@@ -66,9 +66,9 @@
 
 
     <!-- Reval js -->
-    <script src="js/scrollreveal.min.js"></script>
+    <script src="../js/scrollreveal.min.js"></script>
     <!-- main js -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
     <!--  Footer End  -->
 </body>
 

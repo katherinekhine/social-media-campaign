@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Can Parents Help</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                     <li><a href="contact.php">Contact</a></li>
 
                     <?php
-                    include("./actions/show-acc.php");
+                    include("../actions/show-acc.php");
                     ?>
                 </ul>
             </nav>
@@ -52,7 +52,7 @@
         </div>
         <div class="safe-div parent-first-bg">
             <div class="safe-first home-img-ani">
-                <img src="img/social-helping1.jpg" alt="social helping from parents">
+                <img src="../img/social-helping1.jpg" alt="social helping from parents">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p">As a parent, you play a crucial role in supporting your teenager's healthy use of social media. Here are some top tips to help you navigate this digital landscape and promote a positive online experience for your child:</p>
@@ -66,7 +66,7 @@
                 <p class="safe-p"><b>4. Monitor Their Activity:</b> Stay informed about your teenager's online activities by regularly monitoring their social media accounts, friend lists, and messages. Use parental control tools and privacy settings to help protect them from inappropriate content and online risks.</p>
             </div>
             <div class="safe-sec-div home-p-img-ani">
-                <img src="img/social-helping3.jpg" alt="social helping from parents">
+                <img src="../img/social-helping3.jpg" alt="social helping from parents">
             </div>
         </div>
         <div class="home-vd vd-ani">
@@ -74,7 +74,7 @@
         </div>
         <div class="safe-div parent-first-bg">
             <div class="safe-first home-img-ani">
-                <img src="img/social-helping4.jpg" alt="social helping from parents">
+                <img src="../img/social-helping4.jpg" alt="social helping from parents">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p"><b>5. Educate About Online Safety:</b> Teach your teenager about the importance of online safety and privacy. Discuss topics such as cyberbullies, online predators, identity theft, and the consequences of sharing personal information online.</p>
@@ -87,12 +87,12 @@
                 <p class="safe-p"><b>8. Be Supportive and Understanding:</b> Be supportive and understanding of your teenager's experiences and challenges online. Offer guidance, encouragement, and support as they navigate the complexities of social media and online relationships</p>
             </div>
             <div class="safe-sec-div home-p-img-ani">
-                <img src="img/social-helping5.jpg" alt="social helping from parents">
+                <img src="../img/social-helping5.jpg" alt="social helping from parents">
             </div>
         </div>
         <div class="safe-div parent-first-bg">
             <div class="safe-first home-img-ani">
-                <img src="img/social-helping6.jpg" alt="social helping from parents">
+                <img src="../img/social-helping6.jpg" alt="social helping from parents">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p"><b>9. Stay Engaged and Involved:</b> Stay actively engaged in your teenager's online world by participating in their online activities, discussing their interests and concerns, and staying informed about the latest trends and platforms.</p>

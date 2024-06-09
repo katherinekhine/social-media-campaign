@@ -2,7 +2,7 @@
 session_start();
 
 // Include database class
-include './db/db.php';
+include '../db/db.php';
 
 // Create an instance of the Database class
 $db = new Database();
@@ -17,7 +17,7 @@ $db = new Database();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin(Social Media App)</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 
 </head>
 
@@ -41,7 +41,7 @@ $db = new Database();
                     <li><a href="admin-app.php" class="active">Social Media Apps</a></li>
                     <li><a href="admin-contact.php">Contact</a></li>
 
-                    <li><a href="./actions/logout-user.php">Log Out</a></li>
+                    <li><a href="../actions/logout-user.php">Log Out</a></li>
                 </ul>
             </nav>
         </div>
@@ -77,7 +77,7 @@ $db = new Database();
                 echo "<td>" . $app['id'] . "</td>";
                 echo "<td>" . $app['title'] . "</td>";
                 echo "<td class='msg'>" . $app['des'] . "</td>";
-                echo "<td><img class='tb-img' src='./img/" . $app['image'] . "' alt='App Image'></td>";
+                echo "<td><img class='tb-img' src='../img/" . $app['image'] . "' alt='App Image'></td>";
                 echo "<td class='msg'><a href='admin-app-edit.php?appId=" . $app['id'] . "'>Edit</a>|<a href='#' onclick='showConfirm(" . $app['id'] . ")'>Delete</a></td>";
                 echo "</tr>";
             }
@@ -88,7 +88,7 @@ $db = new Database();
     <script type="text/javascript">
         function showConfirm(appId) {
             if (confirm("Are you sure you want to delete this app?")) {
-                window.location.href = "./actions/delete-app.php?appId=" + appId;
+                window.location.href = "../actions/delete-app.php?appId=" + appId;
             }
         }
     </script>

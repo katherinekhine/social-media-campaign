@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($result) {
             // Redirect to app page after successful update
-            header("Location:../admin-app.php");
+            header("Location:../api/admin-app.php");
             exit();
         } else {
             $error = "Failed to update app. Please try again.";

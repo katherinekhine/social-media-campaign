@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livestreaming</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                     <li><a href="contact.php">Contact</a></li>
 
                     <?php
-                    include("./actions/show-acc.php");
+                    include("../actions/show-acc.php");
                     ?>
                 </ul>
             </nav>
@@ -49,7 +49,7 @@
         <p class="mission heading-ani">Livestreaming</p>
         <div class="safe-div livestream-first">
             <div class="safe-first home-img-ani">
-                <img src="img/livestream-5.jpg" alt="livestream">
+                <img src="../img/livestream-5.jpg" alt="livestream">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p">Livestreaming has become increasingly popular among teenagers as a way to share moments, connect with friends, and engage with online communities in real-time. However, it's important to understand the potential risks associated with livestreaming and how to ensure a safe and positive experience. </p>
@@ -67,7 +67,7 @@
         <p class="mission heading-ani">TIPS FOR SAFE Livestreaming</p>
         <div class="safe-div livestream-sec">
             <div class="safe-first home-img-ani">
-                <img src="img/livestream.jpg" alt="How to stay safe">
+                <img src="../img/livestream.jpg" alt="How to stay safe">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p"><b>1. Choose the Right Platform:</b> Select a reputable and secure platform for livestreaming that offers built-in privacy controls and moderation tools to help you manage your audience and content.</p>
@@ -80,12 +80,12 @@
                 <p class="safe-p"><b>4. Interact Responsibly:</b> Engage with your audience in a respectful and responsible manner. Be mindful of the content you share and the messages you communicate during your livestreams, and avoid engaging in behavior that could be harmful or offensive to others.</p>
             </div>
             <div class="safe-sec-div home-p-img-ani">
-                <img src="img/livestream-1.jpg" alt="livestream">
+                <img src="../img/livestream-1.jpg" alt="livestream">
             </div>
         </div>
         <div class="safe-div livestream-second">
             <div class="safe-first home-img-ani">
-                <img src="img/livestream-2.jpg" alt="How to stay safe">
+                <img src="../img/livestream-2.jpg" alt="How to stay safe">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p"><b>5. Be Aware of Online Risks:</b> Educate yourself about the potential risks associated with livestreaming, including cyberbullies, harassment, and online predators. Stay informed about the latest trends and strategies used by malicious actors to target livestreamers, and take proactive steps to protect yourself and your audience.</p>
@@ -98,12 +98,12 @@
                 <p class="safe-p"><b>8. Encourage Positive Engagement:</b> Foster a culture of positivity, respect, and inclusivity within your livestreaming community. Encourage viewers to engage in constructive conversations, offer support and encouragement to one another, and celebrate diversity and creativity.</p>
             </div>
             <div class="safe-sec-div home-p-img-ani">
-                <img src="img/livestream-3.jpg" alt="livestream">
+                <img src="../img/livestream-3.jpg" alt="livestream">
             </div>
         </div>
         <div class="safe-div">
             <div class="safe-first home-img-ani">
-                <img src="img/livestream-4.jpg" alt="How to stay safe">
+                <img src="../img/livestream-4.jpg" alt="How to stay safe">
             </div>
             <div class="safe-second home-ani">
                 <p class="safe-p"><b>9. Protect Your Personal Information:</b> Be cautious about sharing personal information, such as your full name, address, phone number, or financial details, during livestreams. Keep in mind that once shared online, this information can be difficult to retract and may compromise your privacy and safety.</p>

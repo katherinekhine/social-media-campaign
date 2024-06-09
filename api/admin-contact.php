@@ -2,7 +2,7 @@
 session_start();
 
 // Include database class
-include './db/db.php';
+include '../db/db.php';
 
 // Create an instance of the Database class
 $db = new Database();
@@ -17,7 +17,7 @@ $db = new Database();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Contact</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 
 </head>
 
@@ -41,7 +41,7 @@ $db = new Database();
                     <li><a href="admin-app.php">Social Media Apps</a></li>
                     <li><a href="admin-contact.php" class="active">Contact</a></li>
 
-                    <li><a href="./actions/logout-user.php">Log Out</a></li>
+                    <li><a href="../actions/logout-user.php">Log Out</a></li>
                 </ul>
             </nav>
         </div>

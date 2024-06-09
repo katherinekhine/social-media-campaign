@@ -13,7 +13,7 @@ if (isset($_POST['fname']) && (isset($_POST['lname'])) && (isset($_POST['fname']
     $_SESSION['user'][0]['fname'] = $_POST["fname"];
     $_SESSION['user'][0]['lname'] = $_POST["lname"];
     $_SESSION['user'][0]['phone'] = $_POST["phone"];
-    header('Location:../account.php');
+    header('Location:../api/account.php');
     exit();
 } else {
     echo "Error";

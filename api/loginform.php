@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     ?>
         <div id="login-body">
             <div class="wrapper">
-                <form action="./actions/login-user.php" method="post">
+                <form action="../actions/login-user.php" method="post">
                     <h1>Login Form</h1>
                     <div class="login-input-box">
                         <input type="email" placeholder="Enter Your Email" name="email" required>

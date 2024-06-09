@@ -1,7 +1,7 @@
 <?php
 
 // Include database class
-include './db/db.php';
+include '../db/db.php';
 
 // Create an instance of the Database class
 $db = new Database();
@@ -30,7 +30,7 @@ if (isset($_GET['search'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Apps</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -61,7 +61,7 @@ if (isset($_GET['search'])) {
                     <li><a href="contact.php">Contact</a></li>
 
                     <?php
-                    include("./actions/show-acc.php");
+                    include("../actions/show-acc.php");
                     ?>
                 </ul>
             </nav>
@@ -88,7 +88,7 @@ if (isset($_GET['search'])) {
             ?>
                     <div class="social-div">
                         <div class="social-app">
-                            <img src="./img/<?php echo $app['image']; ?>" alt="<?php echo $app['title']; ?>">
+                            <img src="../img/<?php echo $app['image']; ?>" alt="<?php echo $app['title']; ?>">
                         </div>
                         <div class="social-txt">
                             <h4 class="social-title">Title: <?php echo isset($app['title']) ? $app['title'] : 'Title Not Available'; ?></h4>

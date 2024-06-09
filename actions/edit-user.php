@@ -55,7 +55,7 @@ if ($uploadOk == 0) {
         echo "The file " . htmlspecialchars(basename($_FILES["image"]["name"])) . " has been uploaded.";
         $user->updateUserById($sessionUser['id'], $_FILES["image"]["name"]);
         $_SESSION['user'][0]['image'] = $_FILES["image"]["name"];
-        header('Location:../account.php');
+        header('Location:../api/account.php');
         exit();
     } else {
         echo "Sorry, there was an error uploading your file.";

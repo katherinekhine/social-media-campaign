@@ -41,7 +41,7 @@ session_start();
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("login-timer").innerHTML = "<?php session_destroy();  ?>";
-                window.location.href = '../loginform.php';
+                window.location.href = '../api/loginform.php';
             }
         }, 1000); //1 sec = 1000 milisecond
     </script>

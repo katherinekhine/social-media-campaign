@@ -1,6 +1,6 @@
 <?php
-include "./db/db.php";
-include "./db/app-create-process.php";
+include "../db/db.php";
+include "../db/app-create-process.php";
 
 $db = new Database();
 $app = new App($db);
@@ -17,7 +17,7 @@ $appEdit = $app->getAppByID($appId);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>App Create</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -29,9 +29,9 @@ $appEdit = $app->getAppByID($appId);
                         << Back</a></button>
             </div>
         </div>
-        <form action="./actions/edit-app.php?appId=<?php echo $appId ?>" method="post" enctype="multipart/form-data">
+        <form action="../actions/edit-app.php?appId=<?php echo $appId ?>" method="post" enctype="multipart/form-data">
             <div class="create-img">
-                <img src="./img/<?php echo $appEdit[0]['image'] ?>" alt="Current Image" class="tb-img">
+                <img src="../img/<?php echo $appEdit[0]['image'] ?>" alt="Current Image" class="tb-img">
                 <!-- Display the existing image above the file input field -->
                 <input type="file" name="image" placeholder="Upload New Image">
             </div>

@@ -27,18 +27,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($password, $dbUser[0]['password'])) {
             $_SESSION['user'] = $dbUser;
             if ($dbUser[0]['role_id'] == 1) {
-                header("Location:../index.php");
+                header("Location:../api/index.php");
                 exit();
             }
             if ($dbUser[0]['role_id'] == 2) {
-                header("Location:../admin.php");
+                header("Location:../api/admin.php");
                 exit();
             }
         } else {
             echo "<script>alert('Incorrect password!');</script>";
             $counter++; // Increment the counter
             $_SESSION['counter'] = $counter; // Update the session counter
-            echo "<script>window.location.href='../loginform.php';</script>"; // Redirect back to login form
+            echo "<script>window.location.href='../api/loginform.php';</script>"; // Redirect back to login form
             exit();
         }
     } else {

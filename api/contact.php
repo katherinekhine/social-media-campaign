@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../css/style.css?<?php echo time(); ?>">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
                     <li><a href="contact.php" class="active">Contact</a></li>
 
                     <?php
-                    include("./actions/show-acc.php");
+                    include("../actions/show-acc.php");
                     ?>
                 </ul>
             </nav>
@@ -52,7 +52,7 @@
                 <div class="text">
                     Contact Us
                 </div>
-                <form action="./actions/create-contact.php" method="post">
+                <form action="../actions/create-contact.php" method="post">
                     <div class="form-row">
                         <div class="input-data">
                             <input type="text" id="firstname" name="fname" required>
