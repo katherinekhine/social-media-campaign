@@ -58,5 +58,20 @@
       "src": "/account",
       "dest": "/api/account.php"
     }
-  ]
+  ],
+  "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@vercel/php",
+      "config": {
+        "composer": true
+      }
+    }
+  ],
+  "build": {
+    "env": {
+      "LD_LIBRARY_PATH": "/usr/lib64",
+      "PKG_CONFIG_PATH": "/usr/lib64/pkgconfig"
+    }
+  }
 }
