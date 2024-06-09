@@ -1,6 +1,6 @@
 <?php
 
-
+session_start();
 // Ensure correct path to db.php
 include __DIR__ . '/../db/db.php';
 
@@ -38,16 +38,16 @@ $apps = $db->read("SELECT * FROM apps limit 3");
             <nav class="navbar">
                 <ul>
                     <li><a href="index.php" class="active">Home</a></li>
-                    <li><a href="information.php">Information</a></li>
+                    <li><a href="information">Information</a></li>
                     <li><a href="#">More +</a>
                         <ul>
-                            <li><a href="parent-help.php">How Parents Can Help</a></li>
-                            <li><a href="social-media.php">Social Media Apps</a></li>
-                            <li><a href="livestream.php">Livestreaming</a></li>
-                            <li><a href="guidance.php">Guidance</a></li>
+                            <li><a href="parent-help">How Parents Can Help</a></li>
+                            <li><a href="social-media">Social Media Apps</a></li>
+                            <li><a href="livestream">Livestreaming</a></li>
+                            <li><a href="guidance">Guidance</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="contact">Contact</a></li>
 
                     <?php
                     include __DIR__ . '/../actions/show-acc.php';
