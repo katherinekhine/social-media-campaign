@@ -58,5 +58,8 @@
       "src": "/account",
       "dest": "/api/account.php"
     }
-  ]
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  }
 }
