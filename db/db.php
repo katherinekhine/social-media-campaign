@@ -1,24 +1,18 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
-
-use Dotenv\Dotenv;
-
 class Database
 {
     private $pdo;
 
     public function __construct()
     {
-        // Load environment variables from .env file
-        $dotenv = Dotenv::createImmutable(__DIR__ . '/..');
-        $dotenv->load();
 
-        $host = $_ENV['DB_HOST'];
-        $dbname = $_ENV['DB_NAME'];
-        $username = $_ENV['DB_USERNAME'];
-        $password = $_ENV['DB_PASSWORD'];
-        $port = $_ENV['DB_PORT'];
+
+        $host = getenv('DB_HOST');
+        $dbname = getenv('DB_NAME');
+        $username = getenv('DB_USERNAME');
+        $password = getenv('DB_PASSWORD');
+        $port = getenv('DB_PORT');
 
         try {
             $dsn = "mysql:host=$host;dbname=$dbname;port=$port";

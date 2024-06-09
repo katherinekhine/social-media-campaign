@@ -1,7 +1,8 @@
 <?php
 
-// Include database class
-include '../db/db.php';
+
+// Ensure correct path to db.php
+include __DIR__ . '/../db/db.php';
 
 // Create an instance of the Database class
 $db = new Database();
