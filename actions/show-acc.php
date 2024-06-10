@@ -1,4 +1,6 @@
 <?php
+ob_start();
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
@@ -26,3 +28,5 @@ if (isset($_SESSION['user'])) {
               </ul>
           </li>';
 }
+
+ob_end_flush();
