@@ -36,7 +36,7 @@ $user = $_SESSION['user'][0];
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="information">Information</a></li>
                     <li><a href="#">More +</a>
                         <ul>
@@ -53,21 +53,21 @@ $user = $_SESSION['user'][0];
 
 
                         if ($user) {
-                            echo "<li><a href='./account.php' class='active'>" . $user['fname'] . "</a></li>
+                            echo "<li><a href='./account' class='active'>" . $user['fname'] . "</a></li>
                             <li><a href='../actions/logout-user.php'>Logout</a></li>";
                         } else {
                             echo ' <li><a href="#">Login +</a>
             <ul>
-                <li><a href="loginform.php">Login</a></li>
-                <li><a href="registerform.php">Register</a></li>
+                <li><a href="loginform">Login</a></li>
+                <li><a href="registerform">Register</a></li>
             </ul>
         </li>';
                         }
                     } else {
                         echo ' <li><a href="#">Login +</a>
         <ul>
-            <li><a href="loginform.php">Login</a></li>
-            <li><a href="registerform.php">Register</a></li>
+            <li><a href="loginform">Login</a></li>
+            <li><a href="registerform">Register</a></li>
         </ul>
     </li>';
                     }

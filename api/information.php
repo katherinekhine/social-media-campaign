@@ -15,7 +15,7 @@
             <h1>Social Media Campaign</h1>
         </div>
         <div class="second-header">
-            <a href="index.php" class="logo">SMC</a>
+            <a href="./" class="logo">SMC</a>
             <?php
             include("translate.php");
             ?>
