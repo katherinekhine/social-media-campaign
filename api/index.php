@@ -53,7 +53,6 @@ $apps = $db->read("SELECT * FROM apps limit 3");
 
                     <?php
                     include __DIR__ . '/../actions/show-acc.php';
-                    // include("../actions/show-acc.php");
                     ?>
 
                 </ul>
