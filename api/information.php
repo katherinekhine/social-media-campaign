@@ -23,7 +23,7 @@
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index">Home</a></li>
+                    <li><a href="./">Home</a></li>
                     <li><a href="information.php" class="active">Information</a></li>
                     <li><a href="#">More +</a>
                         <ul>
