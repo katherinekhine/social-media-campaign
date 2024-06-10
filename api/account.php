@@ -46,7 +46,7 @@ $user = $_SESSION['user'][0];
                             <li><a href="guidance">Guidance</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="contact">Contact</a></li>
 
                     <?php
                     if (isset($_SESSION['user'])) {
