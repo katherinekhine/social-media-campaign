@@ -25,6 +25,13 @@
       "runtime": "vercel-php@0.7.1"
     }
   },
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.php",
+      "use": "@vercel/php"
+    }
+  ],
   "routes": [
     {
       "src": "/",
@@ -57,6 +64,10 @@
     {
       "src": "/account",
       "dest": "/api/account.php"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
     }
   ]
 }
