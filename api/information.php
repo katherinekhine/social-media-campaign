@@ -33,10 +33,10 @@
                             <li><a href="guidance">Guidance</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="contact">Contact</a></li>
 
                     <?php
-                    include("../actions/show-acc.php");
+                    include __DIR__ . '/../actions/show-acc.php';
                     ?>
                 </ul>
             </nav>

@@ -36,7 +36,7 @@
                     <li><a href="contact.php" class="active">Contact</a></li>
 
                     <?php
-                    include("../actions/show-acc.php");
+                    include __DIR__ . '/../actions/show-acc.php';
                     ?>
                 </ul>
             </nav>
