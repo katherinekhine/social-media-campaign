@@ -23,14 +23,14 @@
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="index.php">Home</a></li>
+                    <li><a href="index">Home</a></li>
                     <li><a href="information.php" class="active">Information</a></li>
                     <li><a href="#">More +</a>
                         <ul>
-                            <li><a href="parent-help.php">How Parents Can Help</a></li>
-                            <li><a href="social-media.php">Social Media Apps</a></li>
-                            <li><a href="livestream.php">Livestreaming</a></li>
-                            <li><a href="guidance.php">Guidance</a></li>
+                            <li><a href="parent-help">How Parents Can Help</a></li>
+                            <li><a href="social-media">Social Media Apps</a></li>
+                            <li><a href="livestream">Livestreaming</a></li>
+                            <li><a href="guidance">Guidance</a></li>
                         </ul>
                     </li>
                     <li><a href="contact.php">Contact</a></li>
