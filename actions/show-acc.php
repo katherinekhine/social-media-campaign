@@ -13,16 +13,16 @@ if (isset($_SESSION['user'])) {
     } else {
         echo '<li><a href="#">Login +</a>
                   <ul>
-                      <li><a href="/api/loginform.php">Login</a></li>
-                      <li><a href="/api/registerform.php">Register</a></li>
+                      <li><a href="/api/loginform">Login</a></li>
+                      <li><a href="/api/registerform">Register</a></li>
                   </ul>
               </li>';
     }
 } else {
     echo '<li><a href="#">Login +</a>
               <ul>
-                  <li><a href="/api/loginform.php">Login</a></li>
-                  <li><a href="/api/registerform.php">Register</a></li>
+                  <li><a href="/api/loginform">Login</a></li>
+                  <li><a href="/api/registerform">Register</a></li>
               </ul>
           </li>';
 }
