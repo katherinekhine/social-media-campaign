@@ -4,8 +4,6 @@
 include __DIR__ . '/../db/db.php';
 
 // Create an instance of the Database class
-
-// Create an instance of the Database class
 $db = new Database();
 
 // Initialize search query variable

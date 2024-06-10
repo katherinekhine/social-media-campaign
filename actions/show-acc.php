@@ -11,16 +11,16 @@
         } else {
             echo '<li><a href="#">Login +</a>
                         <ul>
-                            <li><a href="loginform.php">Login</a></li>
-                            <li><a href="registerform.php">Register</a></li>
+                            <li><a href="loginform">Login</a></li>
+                            <li><a href="registerform">Register</a></li>
                         </ul>
                     </li>';
         }
     } else {
         echo '<li><a href="#">Login +</a>
                     <ul>
-                        <li><a href="loginform.php">Login</a></li>
-                        <li><a href="registerform.php">Register</a></li>
+                        <li><a href="loginform">Login</a></li>
+                        <li><a href="registerform">Register</a></li>
                     </ul>
                 </li>';
     }

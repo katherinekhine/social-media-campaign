@@ -84,7 +84,7 @@
                             <div class="underline"></div>
                             <label for="msg">Write your message</label>
                             <div class="privacy-link">
-                                <a href="privacy.php">Privacy Policy</a>
+                                <a href="privacy">Privacy Policy</a>
                             </div>
                             <div class="form-row submit-btn">
                                 <div class="input-data">
