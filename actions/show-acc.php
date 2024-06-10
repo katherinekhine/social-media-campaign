@@ -1,5 +1,7 @@
  <?php
-    // session_start();
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
 
     // Check if the 'user' session variable is set
     if (isset($_SESSION['user'])) {
@@ -11,16 +13,16 @@
         } else {
             echo '<li><a href="#">Login +</a>
                         <ul>
-                            <li><a href="./loginform">Login</a></li>
-                            <li><a href="./registerform">Register</a></li>
+                            <li><a href="loginform">Login</a></li>
+                            <li><a href="registerform">Register</a></li>
                         </ul>
                     </li>';
         }
     } else {
         echo '<li><a href="#">Login +</a>
                     <ul>
-                        <li><a href="./loginform">Login</a></li>
-                        <li><a href="./registerform">Register</a></li>
+                        <li><a href="loginform">Login</a></li>
+                        <li><a href="registerform">Register</a></li>
                     </ul>
                 </li>';
     }
