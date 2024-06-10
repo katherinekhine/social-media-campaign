@@ -1,9 +1,8 @@
 <?php
-ob_start();
 
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
+// if (session_status() === PHP_SESSION_NONE) {
+//     session_start();
+// }
 
 // Check if the 'user' session variable is set
 if (isset($_SESSION['user'])) {
@@ -28,5 +27,3 @@ if (isset($_SESSION['user'])) {
               </ul>
           </li>';
 }
-
-ob_end_flush();
