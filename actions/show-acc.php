@@ -12,18 +12,21 @@ if (isset($_SESSION['user'])) {
         echo "<li><a href='/api/account.php'>" . htmlspecialchars($user[0]['fname']) . "</a></li>
               <li><a href='/actions/logout-user.php'>Logout</a></li>";
     } else {
+        // CHECK :: Update here
         echo '<li><a href="#">Login +</a>
                   <ul>
-                      <li><a href="../api/loginform">Login</a></li>
-                      <li><a href="/api/registerform">Register</a></li>
+                      <li><a href="/login">Login</a></li>
+                      <li><a href="/register">Register</a></li>
                   </ul>
               </li>';
     }
 } else {
+        // CHECK :: Update here
+
     echo '<li><a href="#">Login +</a>
               <ul>
-                  <li><a href="../api/loginform">Login</a></li>
-                  <li><a href="/api/registerform">Register</a></li>
+                  <li><a href="/login">Login</a></li>
+                  <li><a href="/register">Register</a></li>
               </ul>
           </li>';
 }

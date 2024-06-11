@@ -48,26 +48,25 @@ $user = $_SESSION['user'][0];
                     </li>
                     <li><a href="contact">Contact</a></li>
 
+                    <!-- CHECK:: Update here -->
                     <?php
                     if (isset($_SESSION['user'])) {
-
-
                         if ($user) {
                             echo "<li><a href='./account' class='active'>" . $user['fname'] . "</a></li>
                             <li><a href='../actions/logout-user.php'>Logout</a></li>";
                         } else {
                             echo ' <li><a href="#">Login +</a>
             <ul>
-                <li><a href="loginform">Login</a></li>
-                <li><a href="registerform">Register</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
             </ul>
         </li>';
                         }
                     } else {
                         echo ' <li><a href="#">Login +</a>
         <ul>
-            <li><a href="loginform">Login</a></li>
-            <li><a href="registerform">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
         </ul>
     </li>';
                     }

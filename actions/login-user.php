@@ -38,7 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "<script>alert('Incorrect password!');</script>";
             $counter++; // Increment the counter
             $_SESSION['counter'] = $counter; // Update the session counter
-            echo "<script>window.location.href='../api/loginform.php';</script>"; // Redirect back to login form
+            // CHECK :: Update Here
+            // echo "<script>window.location.href='../api/loginform.php';</script>"; // Redirect back to login form
+            echo "<script>window.location.href='/login';</script>"; // Redirect back to login form
             exit();
         }
     } else {

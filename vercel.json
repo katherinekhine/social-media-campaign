@@ -57,6 +57,14 @@
     {
       "src": "/account",
       "dest": "/api/account.php"
+    },
+    {
+      "src": "/login",
+      "dest": "/api/loginform.php"
+    },
+    {
+      "src": "/register",
+      "dest": "/api/registerform.php"
     }
   ]
 }

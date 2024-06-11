@@ -32,7 +32,9 @@
                     </div>
                     <button type="submit" class="login-btn">Login</button>
                     <div class="register-link">
-                        <p>Aren't you a member? <a href="registerform">Register</a> </p>
+                        <!-- CHEKC:: Update here -->
+                        <!-- <p>Aren't you a member? <a href="registerform">Register</a> </p> -->
+                        <p>Aren't you a member? <a href="/register">Register</a> </p>
                     </div>
                 </form>
             </div>
