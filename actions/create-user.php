@@ -19,7 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($password == $confirmPassword) {
         $hashPassword = password_hash($password, PASSWORD_DEFAULT);
         $user->createUser($fname, $lname, $email, $hashPassword, $phone, $country, $gender);
-        header("Location:../api/loginform.php");
+        // CHECK:: Update here
+        // header("Location:../api/loginform.php");
+        header("Location: /login");
         exit();
     } else {
         echo "Passwords do not match";

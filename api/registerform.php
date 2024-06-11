@@ -68,7 +68,9 @@
                     <input type="submit" value="Register">
                 </div>
                 <div class="login-link">
-                    <p>Already Have an Account? <a href="loginform">Login</a> </p>
+                    <!-- CHECK :: Update here -->
+                    <!-- <p>Already Have an Account? <a href="loginform">Login</a> </p> -->
+                    <p>Already Have an Account? <a href="/login">Login</a> </p>
                 </div>
             </form>
         </div>
