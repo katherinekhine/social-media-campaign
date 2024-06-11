@@ -15,7 +15,7 @@ if (isset($_SESSION['user'])) {
         // CHECK :: Update here
         echo '<li><a href="#">Login +</a>
                   <ul>
-                      <li><a href="/loginform">Login</a></li>
+                      <li><a href="../api/loginform">Login</a></li>
                       <li><a href="/registerform">Register</a></li>
                   </ul>
               </li>';
@@ -25,7 +25,7 @@ if (isset($_SESSION['user'])) {
 
     echo '<li><a href="#">Login +</a>
               <ul>
-                  <li><a href="/loginform">Login</a></li>
+                  <li><a href="../api/loginform">Login</a></li>
                   <li><a href="/registerform">Register</a></li>
               </ul>
           </li>';
