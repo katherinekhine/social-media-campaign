@@ -15,18 +15,18 @@ if (isset($_SESSION['user'])) {
         // CHECK :: Update here
         echo '<li><a href="#">Login +</a>
                   <ul>
-                      <li><a href="/login">Login</a></li>
-                      <li><a href="/register">Register</a></li>
+                      <li><a href="/loginform">Login</a></li>
+                      <li><a href="/registerform">Register</a></li>
                   </ul>
               </li>';
     }
 } else {
-        // CHECK :: Update here
+    // CHECK :: Update here
 
     echo '<li><a href="#">Login +</a>
               <ul>
-                  <li><a href="/login">Login</a></li>
-                  <li><a href="/register">Register</a></li>
+                  <li><a href="/loginform">Login</a></li>
+                  <li><a href="/registerform">Register</a></li>
               </ul>
           </li>';
 }
