@@ -21,7 +21,10 @@
     "api/contact.php": {
       "runtime": "vercel-php@0.7.1"
     },
-    "api/account.php": {
+    "api/loginform.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "api/registerform.php": {
       "runtime": "vercel-php@0.7.1"
     }
   },
