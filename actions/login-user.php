@@ -27,11 +27,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($password, $dbUser[0]['password'])) {
             $_SESSION['user'] = $dbUser;
             if ($dbUser[0]['role_id'] == 1) {
-                header("Location:../api/index.php");
+                header("Location:../api/index");
                 exit();
             }
             if ($dbUser[0]['role_id'] == 2) {
-                header("Location:../api/admin.php");
+                header("Location:../api/admin");
                 exit();
             }
         } else {
