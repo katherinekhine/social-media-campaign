@@ -20,7 +20,7 @@
             <div class="wrapper">
                 <!-- FIX-1 :: HERE change -->
                 <!-- <form action="../actions/login-user" method="post"> -->
-                <form action="/login-user" method="post">
+                <form action="./login-user" method="post">
                     <h1>Login Form</h1>
                     <div class="login-input-box">
                         <input type="email" placeholder="Enter Your Email" name="email" required>
