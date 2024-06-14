@@ -31,4 +31,4 @@ if (isset($_SESSION['user'])) {
 }
 
 // Corrected include path for show-acc.php
-include __DIR__ . '/actions/show-acc.php';
+// include __DIR__ . '/actions/show-acc.php';
