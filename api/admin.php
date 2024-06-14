@@ -2,7 +2,7 @@
 session_start();
 
 // Include database class
-include '../db/db.php';
+include __DIR__ . '/../../db/db.php';
 
 // Create an instance of the Database class
 $db = new Database();
