@@ -37,9 +37,9 @@ $db = new Database();
             <label for="menu-bar">Menu</label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="admin.php" class="active">User List</a></li>
-                    <li><a href="admin-app.php">Social Media Apps</a></li>
-                    <li><a href="admin-contact.php">Contact</a></li>
+                    <li><a href="admin" class="active">User List</a></li>
+                    <li><a href="admin-app">Social Media Apps</a></li>
+                    <li><a href="admin-contact">Contact</a></li>
 
                     <li><a href="../actions/logout-user.php">Log Out</a></li>
                 </ul>
