@@ -52,7 +52,7 @@ $apps = $db->read("SELECT * FROM apps limit 3");
                     <li><a href="contact">Contact</a></li>
 
                     <?php
-                    include __DIR__ . '/../actions/show-acc.php';
+                    include __DIR__ . '/actions/show-acc.php';
                     ?>
 
                 </ul>
