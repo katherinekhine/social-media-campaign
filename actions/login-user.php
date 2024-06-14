@@ -10,7 +10,9 @@ if (isset($_SESSION['counter'])) {
     $counter = $_SESSION['counter'];
 
     if ($counter == 3) {
-        echo "<script>window.location.href='login-timer.php';</script>";
+        // FIX-1 :: HERE change
+        // echo "<script>window.location.href='login-timer.php';</script>";
+        echo "<script>window.location.href='/login-timer';</script>";
         setcookie('login_fail', 'fail', time() + 60 * 10, "/", "localhost");
     }
 } else {
@@ -27,11 +29,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (password_verify($password, $dbUser[0]['password'])) {
             $_SESSION['user'] = $dbUser;
             if ($dbUser[0]['role_id'] == 1) {
-                header("Location:../api/index.php");
+                // FIX-1 :: HERE change
+                // header("Location: ../api/index.php");
+                header("Location: /");
                 exit();
             }
             if ($dbUser[0]['role_id'] == 2) {
-                header("Location:../api/admin.php");
+                // FIX-1 :: HERE change
+                // header("Location: ../api/admin.php");
+                header("Location: /admin");
                 exit();
             }
         } else {

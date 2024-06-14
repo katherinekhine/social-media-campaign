@@ -26,12 +26,22 @@
     },
     "api/registerform.php": {
       "runtime": "vercel-php@0.7.1"
+    },
+    "actions/login-user.php": {
+      "runtime": "vercel-php@0.7.1"
+    },
+    "actions/login-timer.php": {
+      "runtime": "vercel-php@0.7.1"
     }
   },
   "routes": [
     {
       "src": "/",
       "dest": "/api/index.php"
+    },
+    {
+      "src": "/admin",
+      "dest": "/api/admin.php"
     },
     {
       "src": "/information",
@@ -68,6 +78,14 @@
     {
       "src": "/register",
       "dest": "/api/registerform.php"
+    },
+    {
+      "src": "/login-user",
+      "dest": "/actions/login-user.php"
+    },
+    {
+      "src": "/login-timer",
+      "dest": "/actions/login-timer.php"
     }
   ]
 }
