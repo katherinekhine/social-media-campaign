@@ -27,7 +27,7 @@
     "api/registerform.php": {
       "runtime": "vercel-php@0.7.1"
     },
-    "actions/login-user.php": {
+    "api/loginform.php/**/login-user.php": {
       "runtime": "vercel-php@0.7.1"
     },
     "actions/login-timer.php": {
